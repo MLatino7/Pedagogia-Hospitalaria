@@ -86,9 +86,9 @@ No se ha definido todavía un sistema de roles, cuentas de usuario ni perfiles p
 | RF-06 | Permitir navegación y lectura en dispositivos móviles. | Adaptación CSS inicial; requiere pruebas |
 | RF-07 | Incorporar transiciones de scroll, parallax y paneles fijados en escritorio. | Implementación inicial; requiere pruebas |
 | RF-08 | Permitir actualizar los textos, enlaces e imágenes desde el código del proyecto. | Sí, mediante cambios en el repositorio |
-| RF-09 | Publicar el sitio como aplicación estática. | Workflow preparado; despliegue pendiente de validar |
+| RF-09 | Publicar el sitio como aplicación estática. | Cumplido y verificado: GitHub Actions completó build/deploy y la URL pública respondió HTTP 200 el 27 de octubre de 2026 |
 
-Los elementos marcados como implementados son parte del código inicial y no implican que hayan sido probados en todos los navegadores o dispositivos.
+El estado actual de los requisitos visibles de la página, con evidencia y datos pendientes, se mantiene en [ESTADO_REQUISITOS.md](ESTADO_REQUISITOS.md). La revisión de esa matriz no equivale a una auditoría exhaustiva en todos los navegadores o dispositivos.
 
 ## 7. Requerimientos no funcionales
 
@@ -218,7 +218,7 @@ Antes de dar por cerrada la definición funcional, confirmar con el equipo:
 
 ## 15. Estado del proyecto
 
-La demo cuenta con una estructura narrativa y una base técnica ejecutable. La interfaz local y la compilación estática se verificaron en Docker; el contenido definitivo, los recursos reales, la identidad institucional y la publicación aún requieren confirmación.
+La demo cuenta con una estructura narrativa y una base técnica ejecutable. La publicación estática en GitHub Pages quedó verificada; el contenido definitivo, los recursos reales, la identidad institucional y la decisión sobre algunas secciones siguen pendientes.
 
 Este documento debe mantenerse actualizado junto con el código. Cuando se aprueben nuevos requerimientos, conviene registrar aquí qué cambió, por qué se decidió y cómo afecta el alcance.
 
@@ -231,13 +231,15 @@ Este documento debe mantenerse actualizado junto con el código. Cuando se aprue
 - El movimiento reducido se respeta en las animaciones y el desplazamiento programático.
 - Se corrigieron los saltos de línea de `.gitignore` y `.dockerignore`; ahora excluyen correctamente compilados, dependencias, `.git` y archivos de entorno.
 - `npm ci`, la compilación local y la compilación para GitHub Pages se ejecutan con las dependencias fijadas; la última auditoría de npm reportó cero vulnerabilidades.
-- El repositorio remoto ya existe en `MLatino7/Pedagogia-Hospitalaria` y el workflow inicial se ejecutó, pero falló en `actions/configure-pages@v5` antes de compilar: la API informó que Pages no está habilitado/configurado para desplegar con Actions.
+- El primer workflow de Pages falló porque el sitio aún no estaba habilitado para Actions. Se corrigió el flujo y el segundo intento terminó correctamente.
 - Se actualizó el workflow para compilar antes de configurar Pages y mostrar instrucciones concretas si falta habilitar el sitio. Se ajustó `vite.config.js` para tomar el nombre del repositorio desde `GITHUB_REPOSITORY`; esto respeta el uso de mayúsculas de `Pedagogia-Hospitalaria`.
-- La compilación local no puede crear/activar el sitio de Pages en la cuenta. Hace falta guardar `GitHub Actions` como origen en `Settings > Pages` y volver a ejecutar `Deploy to GitHub Pages` desde `Actions`.
+- El commit `dbab00d` se subió a `main`; los trabajos `build` y `deploy` terminaron correctamente y `https://mlatino7.github.io/Pedagogia-Hospitalaria/` respondió HTTP 200.
+- Se creó `ESTADO_REQUISITOS.md` para vincular las secciones actuales con requisitos, evidencia, contenido provisional y datos faltantes. Se retiró el `mailto` de ejemplo y se dejó un marcador no interactivo para el canal de contacto.
 
 ### Pendientes para la siguiente iteración
 
 - Revisar visualmente el diseño en escritorio y distintos móviles.
 - Sustituir o validar los textos y recursos ficticios con el equipo académico.
-- Confirmar identidad visual, correo institucional y contenido académico antes de publicar como versión final.
-- Habilitar Pages en `Settings > Pages` y volver a ejecutar el workflow; confirmar que `build` y `deploy` finalicen correctamente y que la URL cargue.
+- Validar identidad visual, correo institucional, contenido académico y fuentes antes de considerar definitiva la demo.
+- Resolver las decisiones y campos de contenido abiertos en `ESTADO_REQUISITOS.md`.
+- Completar la revisión responsive, accesibilidad y navegación en distintos dispositivos en una siguiente etapa.

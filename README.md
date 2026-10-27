@@ -36,7 +36,11 @@ GitHub Free requiere un repositorio público para Pages. La página publicada es
 
 GitHub Pages sirve archivos estáticos: no hace falta ejecutar Docker en producción.
 
-## Antes de publicar
+## Requisitos y estado de la landing
+
+Consulta [CONTEXTO_PROYECTO.md](CONTEXTO_PROYECTO.md) para el propósito y alcance, y [ESTADO_REQUISITOS.md](ESTADO_REQUISITOS.md) para el estado observado de las secciones, el contenido provisional y la información que falta recopilar.
+
+## Antes de considerar la demo definitiva
 - Confirmar nombre institucional, identidad visual y datos de contacto.
 - Sustituir imágenes de demostración por imágenes autorizadas, idealmente locales en `public/images/`.
 - Reemplazar los recursos de ejemplo por fuentes verificadas.
