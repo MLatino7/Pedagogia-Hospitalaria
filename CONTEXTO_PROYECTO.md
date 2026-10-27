@@ -231,10 +231,13 @@ Este documento debe mantenerse actualizado junto con el código. Cuando se aprue
 - El movimiento reducido se respeta en las animaciones y el desplazamiento programático.
 - Se corrigieron los saltos de línea de `.gitignore` y `.dockerignore`; ahora excluyen correctamente compilados, dependencias, `.git` y archivos de entorno.
 - `npm ci`, la compilación local y la compilación para GitHub Pages se ejecutan con las dependencias fijadas; la última auditoría de npm reportó cero vulnerabilidades.
+- El repositorio remoto ya existe en `MLatino7/Pedagogia-Hospitalaria` y el workflow inicial se ejecutó, pero falló en `actions/configure-pages@v5` antes de compilar: la API informó que Pages no está habilitado/configurado para desplegar con Actions.
+- Se actualizó el workflow para compilar antes de configurar Pages y mostrar instrucciones concretas si falta habilitar el sitio. Se ajustó `vite.config.js` para tomar el nombre del repositorio desde `GITHUB_REPOSITORY`; esto respeta el uso de mayúsculas de `Pedagogia-Hospitalaria`.
+- La compilación local no puede crear/activar el sitio de Pages en la cuenta. Hace falta guardar `GitHub Actions` como origen en `Settings > Pages` y volver a ejecutar `Deploy to GitHub Pages` desde `Actions`.
 
 ### Pendientes para la siguiente iteración
 
 - Revisar visualmente el diseño en escritorio y distintos móviles.
 - Sustituir o validar los textos y recursos ficticios con el equipo académico.
-- Confirmar identidad visual, correo institucional y nombre del repositorio antes de publicar.
-- Probar el workflow en el repositorio de GitHub cuando exista.
+- Confirmar identidad visual, correo institucional y contenido académico antes de publicar como versión final.
+- Habilitar Pages en `Settings > Pages` y volver a ejecutar el workflow; confirmar que `build` y `deploy` finalicen correctamente y que la URL cargue.

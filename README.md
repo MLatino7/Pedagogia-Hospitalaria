@@ -25,11 +25,12 @@ docker compose down
 ```
 
 ## GitHub Pages
-1. Crea un repositorio vacío llamado `pedagogia-hospitalaria` (sin generar otro README).
-2. En `Settings > Pages`, elige `GitHub Actions` como origen.
-3. Sube la rama `main`. El workflow `.github/workflows/deploy.yml` compila y publica `dist/` en cada actualización.
-4. Revisa `Actions` hasta que el despliegue figure como completado; ahí aparecerá la URL pública.
-5. Si el repositorio tiene otro nombre, ajusta `base` en `vite.config.js` antes de publicar.
+1. En el repositorio, abre `Settings > Pages`, selecciona `GitHub Actions` como origen y confirma que quede guardado.
+2. Abre `Actions` y ejecuta `Deploy to GitHub Pages` con `Run workflow` en la rama `main` (o sube un nuevo cambio a `main`).
+3. El workflow `.github/workflows/deploy.yml` instala dependencias, compila y publica `dist/`.
+4. Revisa `Actions` hasta que ambos trabajos (`build` y `deploy`) terminen correctamente; la URL aparecerá en el resumen de la ejecución y en `Settings > Pages`.
+
+La ruta base se toma automáticamente del nombre real del repositorio usando `GITHUB_REPOSITORY`, incluyendo mayúsculas. Si `configure-pages` indica que Pages no está habilitado, vuelve a guardar `GitHub Actions` en `Settings > Pages` y ejecuta el workflow manualmente.
 
 GitHub Free requiere un repositorio público para Pages. La página publicada es accesible públicamente incluso si el plan permite mantener privado el repositorio; no subas información sensible.
 
