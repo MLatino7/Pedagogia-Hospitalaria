@@ -1,6 +1,6 @@
 # Pedagogía hospitalaria — entorno DevOps
 
-Demo estática con React, Vite y GSAP/ScrollTrigger. Incluye parallax en el hero, sección narrativa fijada en escritorio y disposición vertical en móvil. La ilustración principal es un SVG original incluido en el proyecto; los recursos y textos señalados como muestra son ficticios.
+Demo estática con React, Vite y GSAP/ScrollTrigger. Incluye parallax en el hero, sección narrativa fijada en escritorio y disposición vertical en móvil. La ilustración principal es un SVG original incluido en el proyecto; los recursos y textos señalados como muestra son ficticios. El footer contiene navegación interna y marcadores para los datos institucionales y créditos aún no confirmados.
 
 ## Requisitos
 - Docker Engine

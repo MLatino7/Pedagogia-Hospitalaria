@@ -235,6 +235,7 @@ Este documento debe mantenerse actualizado junto con el código. Cuando se aprue
 - Se actualizó el workflow para compilar antes de configurar Pages y mostrar instrucciones concretas si falta habilitar el sitio. Se ajustó `vite.config.js` para tomar el nombre del repositorio desde `GITHUB_REPOSITORY`; esto respeta el uso de mayúsculas de `Pedagogia-Hospitalaria`.
 - El commit `dbab00d` se subió a `main`; los trabajos `build` y `deploy` terminaron correctamente y `https://mlatino7.github.io/Pedagogia-Hospitalaria/` respondió HTTP 200.
 - Se creó `ESTADO_REQUISITOS.md` para vincular las secciones actuales con requisitos, evidencia, contenido provisional y datos faltantes. Se retiró el `mailto` de ejemplo y se dejó un marcador no interactivo para el canal de contacto.
+- Se diseñó un footer profesional con resumen del proyecto, navegación a las secciones, enlace a contacto, créditos pendientes de confirmar y nota informativa. Se añadió el ancla de navegación para “Principios”.
 
 ### Pendientes para la siguiente iteración
 

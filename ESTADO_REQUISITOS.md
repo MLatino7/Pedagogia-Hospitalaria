@@ -25,6 +25,7 @@ Este documento registra lo que se ve en el código y en el sitio publicado. No c
 | Ofrecer scrollytelling | Implementado, pendiente de validación visual | Hay paneles narrativos, parallax y animación fijada en escritorio. En móvil los paneles se muestran en flujo vertical. La secuencia de fotogramas del hero sigue sin estar implementada y requiere confirmación de prioridad. |
 | Adaptar el recorrido a móvil, tableta y escritorio | Implementado, pendiente de probar en tamaños/dispositivos diversos | Hay reglas responsive y menú móvil. La verificación exhaustiva se posterga a la siguiente revisión. |
 | Mantener formularios, backend y base de datos fuera del alcance | Cumplido según el alcance actual | No aparecen en la página; esta demo es estática. |
+| Incluir un pie de página profesional con navegación y créditos | Implementado, pendiente de completar datos | El footer enlaza a las secciones existentes y deja institución, canales y autoría como campos por confirmar. |
 
 ## Secciones que existen hoy
 
@@ -34,7 +35,7 @@ Este documento registra lo que se ve en el código y en el sitio publicado. No c
 4. **Principios:** tres tarjetas sobre contexto, relaciones y bienestar.
 5. **Recursos:** tres muestras ficticias, sin fuentes reales ni enlaces a materiales.
 6. **Cierre / contacto:** mensaje de cierre y un marcador no interactivo para el canal de contacto pendiente.
-7. **Pie de página:** lema provisional y retorno al inicio.
+7. **Pie de página:** resumen del proyecto, enlaces a secciones, contacto, créditos de autoría por confirmar, año y nota informativa.
 
 La separación entre “Acompañamiento” y “Principios” no es un requisito independiente confirmado: los principios sí aparecen en el alcance documentado, mientras que la duplicación de bloques es una decisión de diseño que falta validar. No se añade misión o visión como sección hasta confirmar que el equipo las necesita.
 
