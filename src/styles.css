@@ -12,7 +12,13 @@
 .site-footer .footer-column>a{font-size:12px;color:#f1f2ed;transition:color .2s ease}
 .site-footer .footer-column>a:hover,.site-footer .footer-column>a:focus-visible{color:#edc9a8}
 .footer-contact>a{display:inline-flex;align-items:center;gap:8px;border-bottom:1px solid #95a795;padding:8px 0;margin-top:2px}
-.footer-contact .footer-author{font-size:10px;color:#aebbb0;margin-top:7px}
+.footer-credit{display:flex;align-items:center;gap:14px;border-top:1px solid #ffffff2b;margin-top:18px;padding-top:18px}
+.footer-credit-mark{width:48px;height:48px;flex:none;border-radius:50%;display:grid;place-items:center;background:#dce7d8;color:#405f48;font-family:Manrope,sans-serif;font-size:13px;font-weight:800;letter-spacing:-.08em}
+.footer-credit-copy{display:flex;flex-direction:column;gap:4px}
+.footer-credit-copy>span{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#b9c8ba}
+.footer-credit-copy>strong{font-family:Manrope,sans-serif;font-size:19px;letter-spacing:-.04em;color:#f7f4ee}
 .site-footer .footer-bottom{border-top:1px solid #ffffff2b;padding:18px 8vw 22px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
 .footer-bottom p{margin:0;font-size:10px;line-height:1.6;color:#c4cec5}
+.footer-bottom .footer-version{font-variant-numeric:tabular-nums;color:#f7f4ee;letter-spacing:.04em}
+.footer-version code{font:inherit;color:#b9c8ba}
 @media(max-width:700px){.site-footer .footer-main{grid-template-columns:1fr;gap:34px;padding:48px 7vw 38px}.site-footer .footer-bottom{align-items:flex-start;flex-direction:column;padding:18px 7vw 24px}}
