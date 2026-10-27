@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustración de una niña leyendo en una habitación tranquila</title>
+  <desc id="desc">Escena ilustrada con una ventana, una niña con un libro y una planta junto a la cama.</desc>
+  <defs>
+    <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#f6e8d7"/><stop offset="1" stop-color="#e4eadf"/></linearGradient>
+    <linearGradient id="blanket" x2="1" y2="1"><stop stop-color="#a8bfa7"/><stop offset="1" stop-color="#6d8a76"/></linearGradient>
+  </defs>
+  <rect width="800" height="960" fill="url(#wall)"/>
+  <circle cx="649" cy="158" r="62" fill="#edc28e" opacity=".9"/>
+  <rect x="78" y="92" width="304" height="356" rx="12" fill="#f8f4eb" stroke="#66816e" stroke-width="13"/>
+  <path d="M230 100v340M86 270h288" stroke="#66816e" stroke-width="10"/>
+  <path d="M98 116c52 37 91 32 125-4v323c-42 28-80 27-125-5zM363 116c-44 35-80 37-125-4v323c40 29 82 28 125-5z" fill="#d9b5a0" opacity=".68"/>
+  <path d="M90 777h650" stroke="#b9aa97" stroke-width="12" stroke-linecap="round"/>
+  <rect x="107" y="612" width="577" height="170" rx="38" fill="#f9f5ec"/>
+  <path d="M120 685c129-50 236 6 326-7 105-15 153-37 232-5v111H120z" fill="url(#blanket)"/>
+  <rect x="131" y="581" width="190" height="102" rx="38" fill="#d7c9b6"/>
+  <path d="M323 661c0-133 77-227 186-227 89 0 142 59 142 142v99z" fill="#d58e6e"/>
+  <ellipse cx="503" cy="431" rx="103" ry="122" fill="#c98161"/>
+  <path d="M401 428c-7-106 34-163 108-163 82 0 123 64 104 157-23-44-53-62-93-70-34 32-71 51-119 55z" fill="#4b403d"/>
+  <path d="M459 442c12 10 25 10 37 0M524 442c12 10 25 10 37 0" fill="none" stroke="#493a36" stroke-width="8" stroke-linecap="round"/>
+  <path d="M491 484c14 13 30 13 44 0" fill="none" stroke="#9f594c" stroke-width="7" stroke-linecap="round"/>
+  <path d="M396 557c-38 23-59 66-66 118M613 554c50 25 72 68 81 123" fill="none" stroke="#c98161" stroke-width="31" stroke-linecap="round"/>
+  <path d="M351 611l162-42 39 127-161 43z" fill="#f8f1df" stroke="#718a74" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M512 569l40 127M374 643l128-34" fill="none" stroke="#d2a87a" stroke-width="6"/>
+  <path d="M709 742c-3-73 8-130 34-174M732 656c-29-7-46-23-53-48M729 622c28-8 43-24 47-49M721 704c-27-1-46-15-58-39" fill="none" stroke="#6d8d70" stroke-width="12" stroke-linecap="round"/>
+  <path d="M679 772h94l-15 79h-65z" fill="#d99b76"/>
+  <path d="M128 516h90M128 548h56" stroke="#d69b73" stroke-width="9" stroke-linecap="round" opacity=".8"/>
+  <path d="M674 341l8 20 20 8-20 8-8 20-8-20-20-8 20-8z" fill="#fff9ea" opacity=".9"/>
+</svg>
